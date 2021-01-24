@@ -10,7 +10,19 @@ export interface ICompanyData {
   id: number;
 }
 
+type GraphField = {
+  [key: string]: number;
+};
+export interface IGraphData {
+  chartData?: {
+    labels: GraphField;
+    founded: GraphField;
+    headquartersCountry: GraphField;
+  };
+}
+
 export interface ICompaniesState {
   companies: ICompanyData[];
   cache?: CacheType;
+  graphData?: IGraphData;
 }
