@@ -3,6 +3,8 @@ import { ListChildComponentProps } from 'react-window';
 
 import { ICompanyData } from '../types';
 
+import './style.css';
+
 const CompanyCard = (data: ICompanyData[]) => ({
   index,
   style,

@@ -26,7 +26,9 @@ class Dashboard extends React.Component {
     return (
       <section className="col">
         <div>
-          <h1 className="main-title">List of companies:</h1>
+          <h1 className="main-title main-title_companies">
+            List of companies:
+          </h1>
           <CompanyList data={companies} />
         </div>
       </section>
