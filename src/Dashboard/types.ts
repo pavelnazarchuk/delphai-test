@@ -8,7 +8,7 @@ export interface ICompanyData {
   id: number;
 }
 
-type GraphField = {
+export type GraphField = {
   [key: string]: number;
 };
 export interface IGraphData {
