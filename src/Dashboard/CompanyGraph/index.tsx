@@ -1,6 +1,8 @@
 import * as React from 'react';
 
-class CompanyGraph extends React.Component {
+import { IProps } from './types';
+
+class CompanyGraph extends React.Component<IProps> {
   render() {
     return <div />;
   }

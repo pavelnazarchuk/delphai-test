@@ -1,5 +1,5 @@
 import { IGraphData } from '../types';
 
 export interface IProps {
-  data: IGraphData;
+  data: IGraphData['chartData'];
 }

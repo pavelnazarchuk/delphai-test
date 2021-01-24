@@ -1,5 +1,3 @@
-import { CacheType } from 'react-window-dynamic-list';
-
 export interface ICompanyData {
   name: string;
   founded: string;
@@ -23,6 +21,5 @@ export interface IGraphData {
 
 export interface ICompaniesState {
   companies: ICompanyData[];
-  cache?: CacheType;
   graphData?: IGraphData;
 }
