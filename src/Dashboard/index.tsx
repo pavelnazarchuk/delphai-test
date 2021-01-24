@@ -1,13 +1,10 @@
 import * as React from 'react';
-import DynamicList, { createCache } from 'react-window-dynamic-list';
 
 import data from './company_collection.json';
-import CompanyCard from './CompanyCard';
+import CompanyList from './CompanyList';
 import { ICompaniesState } from './types';
 
-const cache = createCache();
-
-class Companies extends React.Component {
+class Dashboard extends React.Component {
   state: ICompaniesState = {
     companies: [],
   };
@@ -27,16 +24,14 @@ class Companies extends React.Component {
     const { companies } = this.state;
 
     return (
-      <div className="col">
+      <section className="col">
         <div>
           <h1 className="main-title">List of companies:</h1>
-          <DynamicList cache={cache} height={500} width={600} data={companies}>
-            {CompanyCard}
-          </DynamicList>
+          <CompanyList data={companies} />
         </div>
-      </div>
+      </section>
     );
   }
 }
 
-export default Companies;
+export default Dashboard;
