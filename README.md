@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# Delphai test app
 
 You can visit project here: [https://pavelnazarchuk.github.io/](https://pavelnazarchuk.github.io/).
 
