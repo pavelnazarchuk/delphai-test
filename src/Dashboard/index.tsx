@@ -60,7 +60,6 @@ class Dashboard extends React.Component {
 
   render() {
     const { companies, graphData } = this.state;
-
     return (
       <section className="col">
         <div>

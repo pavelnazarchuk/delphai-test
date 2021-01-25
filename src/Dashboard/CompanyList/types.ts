@@ -5,5 +5,5 @@ export interface IProps {
 }
 
 export interface IState {
-  height: 600;
+  height: number;
 }
