@@ -7,6 +7,10 @@ import CompanyCard from '../CompanyCard';
 import { IProps, IState } from './types';
 
 const cache = createCache();
+
+/**
+ * List of all companies with all data about every a company.
+ */
 class CompanyList extends React.Component<IProps> {
   state: IState = {
     height: 600,

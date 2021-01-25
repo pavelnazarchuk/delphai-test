@@ -1,5 +1,5 @@
 * {
-  box-sizing: content-box;
+  box-sizing: border-box;
 }
 
 .main-title {
@@ -16,7 +16,7 @@
   display: block;
 }
 
-.col {
+.wrapper {
   display: flex;
   justify-content: center;
   height: 100vh;

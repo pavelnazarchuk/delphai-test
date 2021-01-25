@@ -5,6 +5,9 @@ import CompanyGraph from './CompanyGraph';
 import CompanyList from './CompanyList';
 import { ICompaniesState, ICompanyData, IGraphData } from './types';
 
+/**
+ * A Dashboard that represents a list of companies and related graphs.
+ */
 class Dashboard extends React.Component {
   state: ICompaniesState = {
     companies: [],
@@ -61,7 +64,7 @@ class Dashboard extends React.Component {
   render() {
     const { companies, graphData } = this.state;
     return (
-      <section className="col">
+      <section className="wrapper">
         <div>
           <h1 className="main-title main-title_companies">
             List of companies:

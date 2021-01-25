@@ -5,6 +5,12 @@ import { ICompanyData } from '../types';
 
 import './style.css';
 
+/**
+ * A presentational component for company data.
+ */
+
+// because react-window-dynamic-list doesn't pass data to child component
+// we have to pass it ourselves
 const CompanyCard = (data: ICompanyData[]) => ({
   index,
   style,

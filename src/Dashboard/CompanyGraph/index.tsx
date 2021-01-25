@@ -9,6 +9,10 @@ import { composeData } from './utils';
 import './style.css';
 import 'react-tabs/style/react-tabs.css';
 
+/**
+ * Graph component which represents industry labels,
+ * companies founded from 2000 and countries with more than 10 headquarters
+ */
 class CompanyGraph extends React.Component<IProps> {
   state: IState = {};
 
@@ -66,7 +70,7 @@ class CompanyGraph extends React.Component<IProps> {
             )}
           </TabPanel>
           <TabPanel>
-            <p className="chart-subtitle"> Companies founded from 2000</p>
+            <p className="chart-subtitle">Companies founded from 2000</p>
             {foundedData && (
               <Line
                 data={foundedData}
